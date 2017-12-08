@@ -1,0 +1,18 @@
+/*
+* @Author: Rushay
+* @Date:   2017-11-30 14:56:27
+* @Last Modified by:   Rushay
+* @Last Modified time: 2017-11-30 15:03:38
+*/
+.nav-simple{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+}
+
+.nav-simple .logo{
+	font-size: 26px;
+	font-weight: bold;
+	color: #c60023;
+}
