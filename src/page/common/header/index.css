@@ -2,7 +2,7 @@
 * @Author: Rushay
 * @Date:   2017-12-07 15:33:41
 * @Last Modified by:   Rushay
-* @Last Modified time: 2017-12-07 16:38:37
+* @Last Modified time: 2017-12-14 09:48:56
 */
 /*通用头部导航*/
 .header .logo{
@@ -13,6 +13,7 @@
 	font-size: 36px;
 	color: #c60023;
 	font-weight: bold;
+	text-decoration: none;
 }
 
 .header .search-con{
@@ -34,4 +35,14 @@
 	position: absolute;
 	height: 44px;
 	width: 80px;
+}
+
+/*面包屑导航*/
+.crumb{
+	height: 50px;
+	line-height: 50px;
+	background: #eee;
+	color: #888;
+	font-size: 14px;
+	border-top: 2px solid #c60023;
 }

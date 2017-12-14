@@ -2,7 +2,7 @@
 * @Author: Rushay
 * @Date:   2017-11-29 15:51:31
 * @Last Modified by:   Rushay
-* @Last Modified time: 2017-11-30 15:35:12
+* @Last Modified time: 2017-12-14 10:45:04
 */
 'use strict';
 var hogan = require('hogan');
@@ -20,7 +20,7 @@ var _rm = {
 			data 		: param.data 	||	'',
 			success		: function(res) {
 				//请求成功
-				if (0 == ret.status) {
+				if (0 === res.status) {
 					typeof param.success === 'function' && param.success(res.data, res.msg);
 				}
 				//没有登录状态，需要强制登录
@@ -28,12 +28,12 @@ var _rm = {
 					_this.doLogin();
 				}
 				//请求数据错误
-				else if (1 === ret.status) {
+				else if (1 === res.status) {
 					typeof param.error === 'function' && param.error(res.msg);
 				}
 			},
 			error 		:function(err) {
-				typeof param.success === 'function' && param.success(err.statusText);
+				typeof param.error === 'function' && param.error(err.statusText);
 			}
 		});
 	},
@@ -78,11 +78,10 @@ var _rm = {
 	},
 	//统一登录处理
 	doLogin : function() {
-		window.location.herf = './login/html?redirect=' + encodeURIComponent(window.location.herf);
+		window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
 	},
 	goHome : function() {
-		window.location.herf = './login/html';
-
+		window.location.href = './index.html';
 	}
 }
 

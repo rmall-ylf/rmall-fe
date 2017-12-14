@@ -2,7 +2,7 @@
 * @Author: Rushay
 * @Date:   2017-12-07 17:10:33
 * @Last Modified by:   Rushay
-* @Last Modified time: 2017-12-08 11:19:17
+* @Last Modified time: 2017-12-14 14:44:21
 */
 'use strict';
 require('./index.css');
@@ -15,7 +15,7 @@ var navSide = {
 		navList : [
 			{name : 'user-center', desc : '个人中心' , href : './user-center.html'},
 			{name : 'order-list', desc : '我的订单' , href : './order-list.html'},
-			{name : 'pass-update', desc : '修改密码' , href : './pass-update.html'},
+			{name : 'user-pass-update', desc : '修改密码' , href : './pass-update.html'},
 			{name : 'about', desc : '关于rmall', href : './about.html'}
 		]
 	},

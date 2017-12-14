@@ -2,7 +2,7 @@
 * @Author: Rushay
 * @Date:   2017-11-30 14:56:27
 * @Last Modified by:   Rushay
-* @Last Modified time: 2017-11-30 15:03:38
+* @Last Modified time: 2017-12-14 09:49:58
 */
 .nav-simple{
 	height: 60px;
@@ -15,4 +15,5 @@
 	font-size: 26px;
 	font-weight: bold;
 	color: #c60023;
+	text-decoration: none;
 }
